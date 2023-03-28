@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function IntroHeader() {
   return (
     <header className="px-6">
-      <div className="max-w-4xl mx-auto flex gap-14 font-poppins">
+      <div className="max-w-4xl mx-auto my-64 flex flex-col-reverse md:flex-row gap-14 font-poppins">
         <div>
           <h1 className="text-3xl font-bold mb-6">
             Hi, I'm Matthew.

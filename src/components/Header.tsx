@@ -1,7 +1,9 @@
 export default function Header() {
+  const routes = ['about', 'projects', 'contact'];
+
   return (
-    <header className="container mx-auto flex justify-between h-24 items-center">
-      <a href='/'>
+    <header className="px-6 md:px-0 container mx-auto flex justify-between h-24 items-center">
+      <a href='#'>
         <svg
           aria-label='Daily Dev Tips logo'
           xmlns='http://www.w3.org/2000/svg'
@@ -24,15 +26,13 @@ export default function Header() {
       </a>
       <nav>
         <ul className="flex gap-6 font-medium font-robotomono">
-          <li>
-            <a href='#'>/about</a>
-          </li>
-          <li>
-            <a href='#'>/work</a>
-          </li>
-          <li>
-            <a href='#'>/contact</a>
-          </li>
+          {routes.map((route) => {
+            return (
+              <li key={route} className="hover:underline hover:text-red-400">
+                <a href={`#${route.toLowerCase()}`}>/{route}</a>
+              </li>
+            );
+          })}
         </ul>
       </nav>
     </header>
