@@ -20,10 +20,11 @@ export default function Contact() {
           <div>
             <header className="">
               <h1 className="font-semibold text-2xl">
-                Get in touch, let's talk.
+                Get in touch, let&apos;s talk.
               </h1>
               <p className="font-light text-base mt-2">
-                Fill in the details and I'll get back to you as soon as I can.
+                Fill in the details to send a message and I&apos;ll get back to
+                you as soon as I can.
               </p>
             </header>
             <div className="icons-container inline-flex flex-col my-20">
