@@ -36,7 +36,7 @@ export default function ProjectItem({
           className="relative transform hover:scale-125 transition duration-2000 ease-out"
         />
       </span>
-      <div className="flex flex-col items-end justify-between gap-4 px-6 py-4 max-w-md z-10 bg-white dark:bg-gray-800 rounded-sm shadow-lg md:ml-[-3rem] border">
+      <div className="flex flex-col items-end justify-between gap-4 px-6 py-4 w-full md:max-w-md z-10 bg-white dark:bg-gray-800 rounded-sm shadow-lg md:ml-[-3rem] border">
         <h3 className="text-gray-600 my-4 block">{title}</h3>
         <p className="">{description}</p>
         <div className="flex items-center gap-4">
