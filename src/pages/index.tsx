@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import IntroHeader from '@/components/IntroHeader'
+import Technologies from '@/components/Technologies'
 import Projects from '@/components/Projects'
 import Contact from '@/components/Contact'
 
@@ -16,6 +16,7 @@ export default function Home() {
       </Head>
       <LazyShow>
         <IntroHeader />
+        <Technologies />
       </LazyShow>
       <LazyShow>
         <Projects />

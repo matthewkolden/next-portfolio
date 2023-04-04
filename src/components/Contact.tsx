@@ -31,7 +31,7 @@ export default function Contact() {
                     />
                   </svg>
                   <p className="font-light text-sm">
-                    123-456-7890
+                    (360) 440 7298
                   </p>
                 </div>
                 <div className="flex flex-row items-center space-x-6 p-4">
@@ -46,7 +46,7 @@ export default function Contact() {
                     <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
                   </svg>
                   <p className="font-light text-sm">
-                    test@testing
+                    matthewkolden.dev@gmail.com
                   </p>
                 </div>
               </div>
