@@ -34,8 +34,11 @@ export default function Projects() {
   ]
 
   return (
-    <section className="bg-blue-100 px-6 font-poppins text-black" id="projects">
-      <div className="max-w-4xl mx-auto py-12">
+    <section
+      className={'bg-[#F1F1F1] dark:bg-gray-900 px-6 font-poppins'}
+      id="projects"
+    >
+      <div className="max-w-4xl mx-auto py-12 font-robotomono">
         <SectionHeader title="Projects" href="#" />
         <div className="flex flex-col">
           {projects.map((project, index) => {

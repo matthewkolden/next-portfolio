@@ -1,39 +1,39 @@
-import React, { MutableRefObject, useEffect, useRef, useState } from 'react';
+import React, { MutableRefObject, useEffect, useRef, useState } from 'react'
 
-import { motion, useAnimation } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion'
 
 function useOnScreen(
   ref: MutableRefObject<HTMLDivElement | null>,
   rootMargin = '0px'
 ) {
-  const [isIntersecting, setIntersecting] = useState(false);
+  const [isIntersecting, setIntersecting] = useState(false)
 
   useEffect(() => {
-    let currentRef: any = null;
+    let currentRef: any = null
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry?.isIntersecting) setIntersecting(entry?.isIntersecting);
+        if (entry?.isIntersecting) setIntersecting(entry?.isIntersecting)
       },
       {
         rootMargin,
       }
-    );
+    )
     if (ref && ref?.current) {
-      currentRef = ref.current;
-      observer.observe(currentRef);
+      currentRef = ref.current
+      observer.observe(currentRef)
     }
     return () => {
-      observer.unobserve(currentRef);
-    };
-  }, [ref, rootMargin]); // Empty array ensures that effect is only run on mount and unmount
+      observer.unobserve(currentRef)
+    }
+  }, [ref, rootMargin]) // Empty array ensures that effect is only run on mount and unmount
 
-  return isIntersecting;
+  return isIntersecting
 }
 
 const LazyShow = ({ children }: { children: React.ReactChild }) => {
-  const controls = useAnimation();
-  const rootRef = useRef<HTMLDivElement>(null);
-  const onScreen = useOnScreen(rootRef);
+  const controls = useAnimation()
+  const rootRef = useRef<HTMLDivElement>(null)
+  const onScreen = useOnScreen(rootRef)
   useEffect(() => {
     if (onScreen) {
       controls.start({
@@ -43,9 +43,9 @@ const LazyShow = ({ children }: { children: React.ReactChild }) => {
           duration: 0.5,
           ease: 'easeOut',
         },
-      });
+      })
     }
-  }, [onScreen, controls]);
+  }, [onScreen, controls])
   return (
     <motion.div
       className="lazy-div"
@@ -55,7 +55,7 @@ const LazyShow = ({ children }: { children: React.ReactChild }) => {
     >
       {children}
     </motion.div>
-  );
-};
+  )
+}
 
-export default LazyShow;
+export default LazyShow
