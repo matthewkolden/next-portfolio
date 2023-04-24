@@ -6,7 +6,7 @@ export default function Projects() {
   const projects = [
     {
       title: 'TraderNest',
-      image: '/damafescreenshot.png',
+      image: '/tradernestscreenshot.png',
       alt: 'tradernest screenshot',
       description:
         'An online portfolio that lets users to create and edit a portfolio of stocks. Make using MERN stack, Finnhub API, and MaterialUI',
