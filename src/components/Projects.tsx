@@ -5,13 +5,22 @@ import LazyShow from './LazyShow'
 export default function Projects() {
   const projects = [
     {
+      title: 'TraderNest',
+      image: '/damafescreenshot.png',
+      alt: 'tradernest screenshot',
+      description:
+        'An online portfolio that lets users to create and edit a portfolio of stocks. Make using MERN stack, Finnhub API, and MaterialUI',
+      github: 'https://github.com/matthewkolden/trader-nest',
+      live: 'https://trader-nest.netlify.app/',
+    },
+    {
       title: 'DaMaFe Movies',
       image: '/damafescreenshot.png',
       alt: 'damafe movies screenshot',
       description:
         'An online movie review platform that enables users to create, read, update, and delete movie reviews built with MongoDB, Express, TailWind, JavaScript, brcryptjs, and JSX.',
       github: 'https://github.com/matthewkolden/movie-app',
-      live: '#',
+      live: 'https://damafe-movies.netlify.app/',
     },
     {
       title: 'Chatbox',
