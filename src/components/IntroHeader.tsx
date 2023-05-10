@@ -22,8 +22,8 @@ export default function IntroHeader() {
             connect!
           </p>
           <a
-            href="/Matthew_Kolden_Resume.pdf"
-            download="Matthew_Kolden_Resume.pdf"
+            href="/KoldenMatthew_Resume.pdf"
+            download="KoldenMatthew_Resume.pdf"
             className="font-robotomono bg-[#776cbd] hover:bg-[#9289ca] text-white px-6 py-3 text-lg rounded-sm font-semibold"
           >
             Heres my resume
